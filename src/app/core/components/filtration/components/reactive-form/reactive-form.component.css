@@ -1,0 +1,201 @@
+.search-section {
+  width: 101rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  height: 12.6rem;
+  background-color: #d8d8d8;
+  box-shadow: 0 0 11px 0 rgb(111 110 110 / 50%);
+}
+.search-section-content {
+  padding: 2rem 2.5rem 0.5rem 2.5rem;
+  height: calc(100% - 3rem);
+  display: flex;
+}
+select {
+  font-family: "Source Sans Pro";
+  padding: 0 3rem 0 1rem;
+  font-size: 1.6rem;
+  height: 3.2rem;
+  color: #828282;
+  appearance: none;
+  border: none;
+
+  font-weight: 600;
+  /*
+    background-image: url("./Frontend/Pages/Main page/Images/Icons/select-icon\(arrow-down\).svg");
+
+    */
+  background-repeat: no-repeat;
+  background-position: center right 10px;
+}
+
+.car-name {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.5rem;
+}
+.car-name select {
+  border-radius: 4px;
+}
+.car-name select:first-of-type {
+  margin-bottom: 1.5rem;
+}
+.price {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+.year {
+  display: flex;
+}
+select:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+.price div,
+.year div {
+  margin-right: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+  border-radius: 5px 0 0 5px;
+  background-color: white;
+  padding: 0 1rem;
+  height: 3.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+  cursor: default;
+}
+.price select {
+  margin-right: 1px;
+}
+.price input,
+.year input {
+  width: 6.2rem;
+  height: 3.2rem;
+  padding: 0 1rem;
+  border: 0;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  color: #c71b25;
+}
+.price input:last-of-type {
+  margin-left: 1px;
+  border-radius: 0 5px 5px 0;
+}
+.year input {
+  width: 7.8rem;
+  height: 3.2rem;
+}
+.year div {
+  width: 8.5rem;
+}
+.year input:last-of-type {
+  margin-left: 2px;
+  border-radius: 0 5px 5px 0;
+}
+.barter-credit {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+}
+.barter-credit input {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 3rem 0 1rem;
+  border: none;
+  border-radius: 4px;
+}
+.barter-credit input:first-of-type {
+  margin-bottom: 1.5rem;
+}
+.barter-credit input[type="checkbox"] {
+  display: none;
+}
+.barter-credit label {
+  position: relative;
+}
+.barter-credit label:before {
+  position: absolute;
+  content: "";
+  width: 1.8rem;
+  height: 1.7rem;
+  border: 1px solid #b8b8b8;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  top: 0.6rem;
+  right: -3rem;
+}
+.barter-credit input[type="checkbox"]:checked + label:before {
+  background-color: #ca1016;
+}
+.barter-credit p {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+.barter-credit div {
+  display: flex;
+  height: 3.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0 3rem 0 1rem;
+  width: 5.9rem;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: #828282;
+}
+.credit-holder {
+  margin-bottom: 1.5rem;
+}
+#location {
+  border-radius: 4px;
+  width: 15.5rem;
+}
+.location-count {
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+#count {
+  width: 11.5rem;
+  border-radius: 0.4rem;
+  margin-top: 1.5rem;
+  padding: 0 3rem 0 1rem;
+  background-color: white;
+  font-size: 1.6rem;
+  color: #c71b25;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  height: 3.2rem;
+  overflow: hidden;
+}
+.search-subsection {
+  display: flex;
+  flex-direction: column;
+}
+.search-subsection button {
+  width: 17.5rem;
+  height: 3.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+}
+.search-subsection button:first-of-type {
+  margin-bottom: 1.5rem;
+  color: white;
+  background-color: #c71b25;
+}
+.search-subsection button:last-of-type {
+  color: white;
+  background-color: #797979;
+}

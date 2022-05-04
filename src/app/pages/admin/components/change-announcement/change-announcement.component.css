@@ -1,0 +1,39 @@
+form {
+  display: flex;
+  margin: 40px auto 0;
+  width: 700px;
+  justify-content: space-between;
+}
+input {
+  padding: 10px;
+  font-size: 15px;
+  background: #F2F2F2;
+  color: #7589B5;
+  border: none;
+  border-radius: 3px;
+}
+input:focus{
+  outline: none;
+}
+button {
+  width: 80px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  background-color: green;
+}
+.holder {
+  display: flex;
+  flex-direction: column;
+}
+label input{
+  margin-bottom: 15px;
+}
+.holder:last-of-type {
+  justify-content: space-between;
+  align-items: flex-end;
+}

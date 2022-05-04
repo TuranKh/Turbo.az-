@@ -1,0 +1,61 @@
+* {
+  color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 1100px;
+  margin: 0 auto;
+}
+.insert-section {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.insert-section a {
+  width: 90px;
+  background-color: green;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.update-button, .delete-button {
+  display: block;
+  width: 80px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 0px;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+}
+.update-button {
+  text-align: center;
+  background-color: #FFBA01;
+  margin-right: 20px;
+}
+
+.delete-button {
+  background-color: #CA1016;
+  cursor: pointer;
+}

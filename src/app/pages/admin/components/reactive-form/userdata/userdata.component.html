@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="form-holder">
+    <h1>Log In</h1>
+    <div class="user-info">
+      <form [formGroup]="login" >
+        <div class="name-info">
+          <label for="name">Email</label>
+          <input autocomplete="off" id="name" type="email" formControlName="email">
+        </div>
+        <div class="password-info">
+          <label for="password">Password</label>
+          <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" id="password" type="password" formControlName="userpassword">
+        </div>
+        <div class="buttons">
+          <button (click)="getUserData()"  class="log-in" type="button">Login</button>
+        </div>
+      </form>
+      <p class="signup-text" routerLink="/admin/user/signup">New User? Click here to sign up:</p>
+    </div>
+  </div>
+</div>
+

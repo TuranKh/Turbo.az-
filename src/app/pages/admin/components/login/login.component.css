@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  width: 50rem;
+  height: 20rem;
+  background-color: #E9E9E9;
+  border-radius: 10px;
+
+ }
+.submit {
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  background-color: #5eba7d;
+  float: right;
+}
+.sign-up {
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  background-color: #FFBA01;
+  margin-right: 50px;
+
+}

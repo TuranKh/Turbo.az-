@@ -1,0 +1,70 @@
+<div class="search-section">
+  <form [formGroup] = carFilter class="search-section-content">
+    <div class="car-name">
+      <select  formControlName="name"  name="brand" >
+        <option  value="null">Bütün markalar</option>
+        <option  value="toyota">Toyota</option>
+        <option  value="BMW">BMW</option>
+      </select>
+      <select  formControlName="model"  name="model" >
+        <option value="null">Bütün modeller</option>
+        <option value="prius">Prius</option>
+      </select>
+    </div>
+    <div class="price-year">
+      <div class="price">
+        <div>
+          <p>Qiymət</p>
+        </div>
+        <select  name="currency" id="currency">
+          <option value="manat">AZN</option>
+          <option value="dollar">USD</option>
+          <option value="euro">EUR</option>
+        </select>
+        <input (change)="getError()"  formControlName="priceMin" type="text" placeholder="min" name="" id="min-price">
+        <div *ngIf="priceMin && priceMin.touched && priceMin.errors && priceMin.errors?.required">
+          Name is required.
+        </div>
+        <div *ngIf="priceMin && priceMin.touched && priceMin.errors && priceMin.errors?.pattern">
+          Only number value accepted
+        </div>
+
+        <input  formControlName="priceMax" type="number" placeholder="max" name="" id="max-price">
+      </div>
+      <div class="year">
+        <div>
+          <p>Buraxılış ili</p>
+        </div>
+        <input formControlName="yearMin" type="text" placeholder="min." name="" id="min-year">
+        <input formControlName="yearMax" type="text" placeholder="max." name="" id="max-year">
+      </div>
+    </div>
+    <div class="barter-credit">
+      <div class="credit-holder">
+        <p>Kredit</p>
+        <input  type="checkbox" name="option" id="credit">
+        <label class="credit" for="credit"></label>
+      </div>
+      <div class="barter-holder">
+        <p>Barter</p>
+        <input  type="checkbox" name="option" id="barter">
+        <label class="barter" for="barter"></label>
+      </div>
+    </div>
+    <div class="location-count">
+      <select  name="location" id="location">
+        <option value="">Bütün Şəhərlər</option>
+        <option value="">Bakı</option>
+        <option value="">Şəki</option>
+      </select>
+      <a href="#" id="count">
+        <p>Bugün 2301 yeni</p>
+        <p>37 908 Elan</p>
+      </a>
+    </div>
+    <div class="search-subsection">
+      <button (click)="showFilter()" type="button">Axtar</button>
+      <button type="button">Ətraflı Axtarış</button>
+    </div>
+  </form>
+</div>

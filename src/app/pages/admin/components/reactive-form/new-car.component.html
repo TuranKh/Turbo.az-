@@ -1,0 +1,31 @@
+<form [formGroup]="newCarDetails">
+  <div class="holder">
+    <label>
+      <input placeholder="Name" formControlName="name" type="text"  />
+      <div>
+
+      </div>
+    </label>
+    <label>
+      <input placeholder="Image" formControlName="url" type="text"  />
+    </label>
+  </div>
+  <div class="holder">
+    <label>
+      <input placeholder="Price" formControlName="price" type="text"  />
+    </label>
+    <label>
+      <input placeholder="Year" formControlName="year" type="text"  />
+    </label>
+  </div>
+  <div class="holder">
+    <label>
+      <input placeholder="Engine" formControlName="engine" type="text"  />
+    </label>
+    <label>
+      <input placeholder="Mileage" formControlName="mileage" type="text"  />
+    </label>
+    <button (click)="addNewCar()" type="button">Save</button>
+  </div>
+</form>
+

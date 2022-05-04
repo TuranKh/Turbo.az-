@@ -1,0 +1,27 @@
+<form [formGroup]="updateForm">
+  <div class="holder">
+    <label>
+      <input formControlName="name" type="text"  />
+    </label>
+    <label>
+      <input formControlName="url" type="text"  />
+    </label>
+  </div>
+  <div class="holder">
+    <label>
+      <input formControlName="price" type="text"  />
+    </label>
+    <label>
+      <input formControlName="year" type="text"  />
+    </label>
+  </div>
+  <div class="holder">
+    <label>
+      <input formControlName="engine" type="text"  />
+    </label>
+    <label>
+      <input formControlName="mileage" type="text"  />
+    </label>
+    <button style="cursor: pointer" (click)="save()" type="button">Save</button>
+  </div>
+</form>

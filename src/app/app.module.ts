@@ -10,11 +10,10 @@ import {SharedModule} from "./core/shared/shared.module";
 import { CreateComponent } from './pages/create/create.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveFormComponent } from './pages/create/components/reactive-form/reactive-form.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {HomeService} from "./pages/home/services/home.service";
-//import { AdminComponent } from './pages/admin/admin/admin.component';
-
-
+import {AuthInterceptor} from "./core/interceptors/auth.interceptor";
+import {Router, RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -32,11 +31,16 @@ import {HomeService} from "./pages/home/services/home.service";
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
   ],
 
-  exports: [],
-  providers: [HomeService],
+  exports: [
+  ],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    HomeService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

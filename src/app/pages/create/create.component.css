@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+.page-holder {
+  width: 97rem;
+  margin: 0 auto;
+}
+.site-header {
+  line-height: 6rem;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+.rules {
+  list-style: disc;
+
+  margin: 2rem 0 0 1.6rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+}
+.headers-holder {
+  width: 96rem;
+  margin: 0 .5rem;
+}
+
+
+
+
+
+
+
+
+.container .content {
+  width: 1010px;
+  margin: 0 auto;
+}
+.title, p {
+  color: #000;
+}
+input, p {
+  font-size: 30px;
+  line-height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  color: #76c81c;
+}
+input {
+  background: #212c3a;
+  margin-bottom: 40px;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background: #212c3a;
+  color: white;
+  font-size: 20px;
+}
+

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jura";
+  color: white;
+  font-size: 2rem;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.site {
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+h1 {
+  font-family: "Bebas";
+  color: white;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 6rem;
+  background-color: #CA1016;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 1100px;
+  margin: 0 auto;
+}
+.header-section {
+  width: 100rem;
+  margin: 0 auto;
+}
+.menu-headers {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.menu-headers p {
+  width: 15rem;
+  text-align: center;
+  color: black;
+}
+
+button:active {
+  border-style: outset;
+}
+#confirm {
+  font-weight: 700;
+  cursor: pointer;
+  width: 50rem;
+  margin: 2rem auto 0;
+  background-color: #ffefca;
+  color: black;
+  border-radius: 1rem;
+  height: 3rem;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-family: "Jura";
+}
+.table {
+  width: 70%;
+  margin: 60px 0 80px 30px;
+  table-layout: auto;
+}
+
+.table tr {
+  width: 100%;
+}
+.table th {
+  font-size: 30px;
+  color: white;
+}
+.table td {
+
+  border: 1px solid white;
+  text-align: center;
+  color: #f7cb09;
+  font-size: 20px;
+}
+.car-image {
+  width: 200px;
+}
+.edit {
+  border-top: 30px;
+  cursor: pointer;
+  padding: 0 1rem;
+  background-color: #ffefca;
+  color: black;
+  border-radius: 1rem;
+  height: 3rem;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  outline: none;
+}
+.edit:active {
+  border-top: 0px;
+}
+.edit-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+

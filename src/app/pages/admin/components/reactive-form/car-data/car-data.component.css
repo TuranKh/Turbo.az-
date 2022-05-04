@@ -1,0 +1,62 @@
+::placeholder {
+  color: black;
+}
+.table-holder {
+  width: 1170px;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.inputs {
+  display: flex;
+}
+.inputs:nth-of-type(2n) {
+}
+.inputs:nth-of-type(2n-1) {
+  background-color: #E7E9EB;
+
+}
+.inputs:nth-of-type(2n-1) input {
+  color: black;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+.inputs form {
+  display: flex;
+}
+input {
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+.table-headers {
+  display: flex;
+  height: 60px;
+  background-color: #36304a;
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.table-headers p {
+  width: 154px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  font-size: 14px;
+  width: 70px;
+  padding: 8px 0px;
+  border-radius: 8px;
+  background-color: #36304a;
+  color: white;
+  font-size: 12px;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 7px;
+}

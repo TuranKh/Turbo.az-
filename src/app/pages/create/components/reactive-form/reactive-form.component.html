@@ -1,0 +1,115 @@
+<div class="form-container">
+  <form [formGroup]="loginForm">
+    <div class="inputs">
+      <div class="inputs-left">
+        <div class="input-container">
+          <label htmlFor="brand" class="input-title required">Marka</label>
+          <select class="custom-select" (change)="change($event)" formControlName="brand">
+            <option>Seçin</option>
+            <option *ngFor="let car of Cars" value="{{car.value}}">{{car.value}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="model" class="input-title required">Model</label>
+          <select class="custom-select" (change)="change($event)" formControlName="model">
+            <option>Seçin</option>
+            <option *ngFor="let car of Cars" value="{{car.value}}">{{car.value}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor = "bodyType" class="input-title required">Ban növü</label>
+          <select class="custom-select" (change)="change($event)" formControlName="bodyType">
+            <option></option>
+            <option *ngFor="let car of Cars" value="{{car.key}}">{{car.key}}</option>
+          </select>
+        </div>
+        <div formGroupName="mileage" class="input-container">
+            <label  htmlFor="mileage" class="input-title required">Yürüş</label>
+            <input formControlName="distance" type="text" id="mileage" />
+            <div class="radio-buttons">
+              <label class="container">km
+                <div class="radio-button-holder">
+                  <input formControlName="unit" value="km"  type="radio" name="unit" />
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+              <label class="container">mi
+                <div class="radio-button-holder">
+                  <input formControlName="unit" value="mile" type="radio" name="unit" />
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+            </div>
+        </div>
+        <div class="input-container">
+          <label htmlFor = "color" class="input-title required">Rəng</label>
+          <select class="custom-select" (change)="change($event)" formControlName="color">
+            <option *ngFor="let color of Colors" value="{{color.value}}">{{color.value}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="price" class="input-title required">Qiymət</label>
+          <input formControlName="price" type="text" id="price" />
+          <div class="radio-buttons">
+            <label class="container">AZN
+              <div class="radio-button-holder">
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </div>
+            </label>
+            <label class="container">USD
+              <div class="radio-button-holder">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </div>
+            </label>
+            <label class="container">USD
+              <div class="radio-button-holder">
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="inputs-right">
+        <div class="input-container">
+          <label htmlFor="fuels" class="input-title required">Yanacaq növü</label>
+          <select class="custom-select" (change)="change($event)" formControlName="fuels">
+            <option *ngFor="let fuel of Fuels" value="{{fuel.value}}">{{fuel.value}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="carDrives" class="input-title required">Ötürücü</label>
+          <select class="custom-select" (change)="change($event)" formControlName="carDrives">
+            <option *ngFor="let fuel of Fuels" value="{{fuel}}">{{fuel}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="transmission" class="input-title required">Sürətlər qutusu </label>
+          <select class="custom-select" (change)="change($event)" formControlName="transmission">
+            <option *ngFor="let fuel of Fuels" value="{{fuel}}">{{fuel}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="year" class="input-title required">Buraxılış ili </label>
+          <select class="custom-select" (change)="change($event)" formControlName="year">
+            <option *ngFor="let fuel of Fuels" value="{{fuel}}">{{fuel}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="engine" class="input-title required">Mühərrikin həcmi, sm3</label>
+          <select class="custom-select" (change)="change($event)" formControlName="engine">
+            <option *ngFor="let fuel of Fuels" value="{{fuel}}">{{fuel}}</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label htmlFor="enginePower" class="input-title required">Mühərrikin gücü, a.g</label>
+          <select class="custom-select" (change)="change($event)" formControlName="enginePower">
+            <option *ngFor="let fuel of Fuels" value="{{fuel}}">{{fuel}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

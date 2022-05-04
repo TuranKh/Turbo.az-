@@ -1,0 +1,47 @@
+<div class="table-holder">
+  <div class="table-headers">
+    <p>ID</p>
+    <p>Name</p>
+    <p>Image</p>
+    <p>Year</p>
+    <p>Price</p>
+    <p>Engine</p>
+    <p>Mileage</p>
+  </div>
+  <div class="inputs" *ngFor="let item of data;" >
+<!--    <div formArrayName="carDetailsNew">-->
+<!--      <div *ngFor="let element of data" formGroupName="0">-->
+<!--        <h2>-->
+<!--          {{data[element]}} This is data-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--    </div>-->
+    <form formArrayName="carDetails">
+      <div *ngFor="let item of carDetails.controls;">
+        <div [formGroupName]=item.value >
+          <input  class="inputdata" formControlName="id" placeholder="{{item.value[0]}}"  [attr.disabled]="false"> I am here
+          <input class="inputdata" formControlName="name" placeholder="{{item.value[1]}}" [attr.disabled]="false">
+          <div style="width: 154px; text-align: center ">
+            <input class="inputdata" formControlName="url" placeholder="{{item.value[2]}}" [attr.disabled]="active">
+            <img style="height: 75px; width: 100px" src="{{item.value[3]}}">
+          </div>
+          <input class="inputdata" formControlName="year" placeholder="{{item.value[4]}}" [attr.disabled]="active">
+          <input class="inputdata" formControlName="price" placeholder="{{item.value[5]}}" [attr.disabled]="active">
+          <input class="inputdata" formControlName="engine" placeholder="{{item.value[6]}}" [attr.disabled]="active">
+          <input class="inputdata" formControlName="mileage" placeholder="{{item.value[7]}}" [attr.disabled]="active">
+        </div>
+      </div>
+    </form>
+    <div class="buttons">
+      <button type="button" class="modify" id="edit" (click)="condition = !condition; editAndSubmit(condition, item.id); getCarData()">
+<!--        {{condition ? 'Edit' : 'Done'}}-->
+        Edit
+      </button>
+
+    </div>
+  </div>
+  <button (click)="ifNewCar()" type="button" class="modify">
+    New Button
+  </button>
+
+</div>
