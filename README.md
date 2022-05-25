@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## General Information
 
-Webpage is clone of current working turbo.az with all main features included, besides that with fully functioning admin panel where you can create your account and directly change propertices of announcements or modify them.  
+Webpage is a clone of current working turbo.az with all main features included, in addition to that webpage has a fully functioning admin panel where you can create your account and directly change propertices of announcements or modify them.  
 
 ## Development server
 
